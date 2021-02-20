@@ -2,9 +2,9 @@ import { NowRequest, NowResponse } from '@vercel/node';
 
 import db from 'db.json';
 
-const DEFAULT_LANG = 'pt-br';
+import { DEFAULT_LANG } from 'helpers/constants.json';
 
-const availableLangs = Object.keys(db);
+import LanguageServices from 'services/language';
 
 export default function handler(request: NowRequest, response: NowResponse) {
   const { lang } = request.query;
@@ -13,7 +13,7 @@ export default function handler(request: NowRequest, response: NowResponse) {
     return response.status(200).json(db[DEFAULT_LANG]);
   }
 
-  const isLangAvailable = availableLangs.includes(lang as string);
+  const isLangAvailable = LanguageServices.isLangAvailable(lang as string);
 
   if (!isLangAvailable) {
     return response
