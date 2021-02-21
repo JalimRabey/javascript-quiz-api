@@ -7,7 +7,10 @@ import { DEFAULT_LANG } from 'helpers/constants.json';
 import LanguageServices from 'services/language';
 import QuestionServices from 'services/question';
 
-export default function handler(request: NowRequest, response: NowResponse) {
+const randomQuizzesHandler = async (
+  request: NowRequest,
+  response: NowResponse
+) => {
   const { lang, quantity } = request.query;
 
   const selectedLang = lang ? String(lang) : DEFAULT_LANG;
@@ -25,4 +28,6 @@ export default function handler(request: NowRequest, response: NowResponse) {
   );
 
   return response.status(200).json(randomQuestions);
-}
+};
+
+export default randomQuizzesHandler;

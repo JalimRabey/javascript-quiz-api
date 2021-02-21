@@ -6,7 +6,7 @@ import { DEFAULT_LANG } from 'helpers/constants.json';
 
 import LanguageServices from 'services/language';
 
-export default function handler(request: NowRequest, response: NowResponse) {
+const quizzesHandler = async (request: NowRequest, response: NowResponse) => {
   const { lang } = request.query;
 
   if (!lang) {
@@ -22,4 +22,6 @@ export default function handler(request: NowRequest, response: NowResponse) {
   }
 
   return response.status(200).json(db[lang as string]);
-}
+};
+
+export default quizzesHandler;
