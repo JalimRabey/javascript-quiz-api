@@ -1,3 +1,4 @@
 {
-  "DEFAULT_LANG": "pt-br"
+  "DEFAULT_LANG": "pt-br",
+  "DEFAULT_RANDOM_QUESTIONS_QUANTITY": 5
 }

@@ -12,17 +12,17 @@
         {
           "id": 2,
           "text": "Terceira resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 3,
           "text": "Quarta resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 4,
           "text": "Quinta resposta",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -38,17 +38,17 @@
         {
           "id": 2,
           "text": "Terceira resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 3,
           "text": "Quarta resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 4,
           "text": "Quinta resposta",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -64,17 +64,17 @@
         {
           "id": 2,
           "text": "Terceira resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 3,
           "text": "Quarta resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 4,
           "text": "Quinta resposta",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -90,17 +90,17 @@
         {
           "id": 2,
           "text": "Terceira resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 3,
           "text": "Quarta resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 4,
           "text": "Quinta resposta",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -116,17 +116,17 @@
         {
           "id": 2,
           "text": "Terceira resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 3,
           "text": "Quarta resposta",
-          "correct": true
+          "correct": false
         },
         {
           "id": 4,
           "text": "Quinta resposta",
-          "correct": true
+          "correct": false
         }
       ]
     }
