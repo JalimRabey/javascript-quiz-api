@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "attribute": "id",
+      "type": "integer",
+      "description": "Unique Id per question"
+    },
+    {
+      "attribute": "question",
+      "type": "string",
+      "description": "Question text"
+    },
+    {
+      "attribute": "answers",
+      "type": "array",
+      "description": "List of answers"
+    }
+  ],
+  "answers": [
+    {
+      "attribute": "id",
+      "type": "integer",
+      "description": "Unique Id per answer"
+    },
+    {
+      "attribute": "text",
+      "type": "string",
+      "description": "Answer text"
+    },
+    {
+      "attribute": "correct",
+      "type": "boolean",
+      "description": "Value that means if the answer is correct"
+    }
+  ]
+}
