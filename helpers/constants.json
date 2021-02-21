@@ -1,4 +1,12 @@
 {
   "DEFAULT_LANG": "pt-br",
-  "DEFAULT_RANDOM_QUESTIONS_QUANTITY": 5
+  "DEFAULT_RANDOM_QUESTIONS_QUANTITY": 5,
+  "HEADER_LINKS": [
+    {
+      "label": "Github",
+      "url": "https://github.com/JalimRabey/javascript-quiz-api",
+      "title": "View source code on Github",
+      "targetBlank": true
+    }
+  ]
 }
