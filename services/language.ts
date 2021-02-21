@@ -5,5 +5,6 @@ const availableLangs = Object.keys(db);
 const isLangAvailable = (lang: string) => availableLangs.includes(lang);
 
 export default {
+  availableLangs,
   isLangAvailable,
 };
