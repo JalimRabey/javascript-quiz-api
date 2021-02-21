@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import AttributesTable from 'components/AttributesTable';
+import EndpointUrlContent from 'components/Endpoints/components/EndpointUrlContent';
 
 import LanguageServices from 'services/language';
 
@@ -28,18 +29,10 @@ const Endpoints = () => (
           <i>Get an array with all the questions in {DEFAULT_LANG}</i>
         </p>
 
-        <div className="mt-2 flex flex-col bg-backgroundColor-900 py-2 px-4 w-full">
-          <Link href="/api/v1/quizzes">
-            <a
-              className=" font-bold hover:text-primary-400 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Quizzes"
-            >
-              https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes
-            </a>
-          </Link>
-        </div>
+        <EndpointUrlContent
+          href="/api/v1/quizzes"
+          url="https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes"
+        />
       </li>
 
       <li className="text-textColor mt-4">
@@ -59,19 +52,10 @@ const Endpoints = () => (
           </i>
         </p>
 
-        <div className="mt-2 flex flex-col bg-backgroundColor-900 py-2 px-4 w-full">
-          <Link href="/api/v1/quizzes?lang=pt-br">
-            <a
-              className=" font-bold hover:text-primary-400 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Quizzes"
-            >
-              https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes?lang=$
-              {'{LANGUAGE}'}
-            </a>
-          </Link>
-        </div>
+        <EndpointUrlContent
+          href="/api/v1/quizzes?lang=pt-br"
+          url="https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes?lang=${LANGUAGE}"
+        />
       </li>
 
       <li className="text-textColor mt-4">
@@ -87,18 +71,10 @@ const Endpoints = () => (
           </i>
         </p>
 
-        <div className="mt-2 flex flex-col bg-backgroundColor-900 py-2 px-4 w-full">
-          <Link href="/api/v1/quizzes/random">
-            <a
-              className=" font-bold hover:text-primary-400 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Quizzes"
-            >
-              https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes/random
-            </a>
-          </Link>
-        </div>
+        <EndpointUrlContent
+          href="/api/v1/quizzes/random"
+          url="https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes/random"
+        />
       </li>
 
       <li className="text-textColor mt-4">
@@ -116,19 +92,11 @@ const Endpoints = () => (
           </i>
         </p>
 
-        <div className="mt-2 flex flex-col bg-backgroundColor-900 py-2 px-4 w-full">
-          <Link href="/api/v1/quizzes/random?quantity=3">
-            <a
-              className=" font-bold hover:text-primary-400 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Quizzes"
-            >
-              https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes/random?quantity=$
-              {'{x}'}
-            </a>
-          </Link>
-        </div>
+        <EndpointUrlContent
+          href="/api/v1/quizzes/random?quantity=3"
+          url="https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes/random?quantity=$
+          {x}"
+        />
       </li>
 
       <li className="text-textColor mt-4">
@@ -148,19 +116,11 @@ const Endpoints = () => (
           </i>
         </p>
 
-        <div className="mt-2 flex flex-col bg-backgroundColor-900 py-2 px-4 w-full">
-          <Link href="/api/v1/quizzes/random?quantity=3&lang=pt-br">
-            <a
-              className=" font-bold hover:text-primary-400 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Quizzes"
-            >
-              https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes/random?quantity=$
-              {'{x}'}&lang=${'{LANGUAGE}'}
-            </a>
-          </Link>
-        </div>
+        <EndpointUrlContent
+          href="/api/v1/quizzes/random?quantity=3&lang=pt-br"
+          url="https://javascript-quiz-api-jalimrabey.vercel.app/api/v1/quizzes/random?quantity=$
+              {x}&lang=${LANGUAGE}"
+        />
       </li>
     </ul>
   </section>
